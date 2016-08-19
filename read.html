@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap First Example</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	
+	<body>
+		<!-- Navigation bar -->
+		<div class = "navbar navbar-inverse navbar-static-top">
+			<div class = "container">
+				<a href="#" class = "navbar-brand"> Tech Site </a>
+
+				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				</button>
+
+				<div class = "collapse navbar-collapse navHeaderCollapse">
+					<ul class = "nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="#">Blog</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Google+</a></li>
+								<li><a href="#">Instagram</a></li>
+							</ul>
+						</li>
+						<li><a href="#">About</a></li>
+						<li><a href="#contact" data-toggle="modal">Contact</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="page-header">
+								<h3>Whatever you want <small>Posted on july 26th</small></h3>
+							</div>
+							<img class="featuredImg" src="image/samsung.jpg" width="100%">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus odio in eleifend. Donec ornare placerat porta. Duis nec leo ut nisi efficitur consequat ac at tortor. Vivamus non odio in lacus vehicula sagittis non eu nisl. Etiam non leo at purus gravida fermentum. Suspendisse eu tristique purus. Aenean quis dictum nunc. Integer aliquet nisi vitae rutrum maximus. Pellentesque nec ipsum hendrerit, euismod lorem nec, iaculis lectus. Sed gravida porta leo.</p>
+
+							<h4>A heading</h4>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus odio in eleifend. Donec ornare placerat porta. Duis nec leo ut nisi efficitur consequat ac at tortor. Vivamus non odio in lacus vehicula sagittis non eu nisl. Etiam non leo at purus gravida fermentum. Suspendisse eu tristique purus. Aenean quis dictum nunc. Integer aliquet nisi vitae rutrum maximus. Pellentesque nec ipsum hendrerit, euismod lorem nec, iaculis lectus. Sed gravida porta leo.</p>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<p class="navbar-text pull-left">Site Built By João Almeida</p>
+				<a href="#" class="navbar-btn btn-danger btn pull-right"> Subcribe on Youtube </a>
+			</div>
+		</div>
+
+		<div class="modal fade" id="contact" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4>Contact Tech Site</h4>
+					</div>
+					<div class="modal-body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus odio in eleifend. Donec ornare placerat porta. Duis nec leo ut nisi efficitur consequat ac at tortor. Vivamus non odio in lacus vehicula sagittis non eu nisl. Etiam non leo at purus gravida fermentum. Suspendisse eu tristique purus. Aenean quis dictum nunc. Integer aliquet nisi vitae rutrum maximus. Pellentesque nec ipsum hendrerit, euismod lorem nec, iaculis lectus. Sed gravida porta leo.</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn btn-default" data-dismiss = "modal"> Close </a>
+						<a href="#" class="btn btn-primary" data-dismiss = "modal"> Close </a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</body>
+</html>
