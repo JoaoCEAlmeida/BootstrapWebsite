@@ -22,13 +22,13 @@
 				<div class = "collapse navbar-collapse navHeaderCollapse">
 					<ul class = "nav navbar-nav navbar-right">
 						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#">Blog</a></li>
+						<li><a href="blog.html">Blog</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="#">Twitter</a></li>
-								<li><a href="#">Facebook</a></li>
-								<li><a href="#">Google+</a></li>
+								<li><a href="https://www.facebook.com/joao.almeida.904?ref=bookmarks">Facebook</a></li>
+								<li><a href="https://plus.google.com/110914938718466324872/posts">Google+</a></li>
 								<li><a href="#">Instagram</a></li>
 							</ul>
 						</li>
@@ -93,16 +93,35 @@
 		<div class="modal fade" id="contact" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
+				<form class="form-horizontal">
 					<div class="modal-header">
 						<h4>Contact Tech Site</h4>
 					</div>
 					<div class="modal-body">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus odio in eleifend. Donec ornare placerat porta. Duis nec leo ut nisi efficitur consequat ac at tortor. Vivamus non odio in lacus vehicula sagittis non eu nisl. Etiam non leo at purus gravida fermentum. Suspendisse eu tristique purus. Aenean quis dictum nunc. Integer aliquet nisi vitae rutrum maximus. Pellentesque nec ipsum hendrerit, euismod lorem nec, iaculis lectus. Sed gravida porta leo.</p>
+						<div class="form-group">
+							<label for = "contact-name" class="col-lg-2 control-lable"> Name</label>
+							<div class="col-lg-10"> 
+							<input type="text" name="form-control" id="contact-name" placeholder="Full Name">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for = "contact-email" class="col-lg-2 control-lable"> Email</label>
+							<div class="col-lg-10"> 
+							<input type="email" name="form-control" id="contact-email" placeholder="you@example.com">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for = "contact-message" class="col-lg-2 control-lable"> Message</label>
+							<div class="col-lg-10"> 
+							<textarea class="form-control" rows="8"></textarea>
+							</div>
+						</div>
 					</div>
 					<div class="modal-footer">
 						<a href="#" class="btn btn-default" data-dismiss = "modal"> Close </a>
-						<a href="#" class="btn btn-primary" data-dismiss = "modal"> Close </a>
+						<button class="btn btn-primary" type="submit">Send</button>
 					</div>
+				</form>
 				</div>
 			</div>
 		</div>

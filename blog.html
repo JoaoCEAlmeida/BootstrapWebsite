@@ -8,8 +8,8 @@
 	</head>
 	
 	<body>
-		<!-- Navigation bar -->
-		<div class = "navbar navbar-inverse navbar-static-top">
+	<!-- Navigation bar -->
+		 <div class = "navbar navbar-inverse navbar-static-top">
 			<div class = "container">
 				<a href="#" class = "navbar-brand"> Tech Site </a>
 
@@ -22,7 +22,7 @@
 				<div class = "collapse navbar-collapse navHeaderCollapse">
 					<ul class = "nav navbar-nav navbar-right">
 						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="blog.html">Blog</a></li>
+						<li><a href="#">Blog</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b></a>
 							<ul class="dropdown-menu">
@@ -32,7 +32,7 @@
 								<li><a href="#">Instagram</a></li>
 							</ul>
 						</li>
-						<li><a href="#">About</a></li>
+						<li><a href="read.html">About</a></li>
 						<li><a href="#contact" data-toggle="modal">Contact</a></li>
 					</ul>
 				</div>
@@ -40,48 +40,44 @@
 			</div>
 		</div>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-9">
-					<div class="panel panel-default">
-						<div class="panel-body">
-							<div class="page-header">
-								<h3>Whatever you want <small>Posted on july 26th</small></h3>
-							</div>
-							<img class="featuredImg" src="image/samsung.jpg" width="100%">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus odio in eleifend. Donec ornare placerat porta. Duis nec leo ut nisi efficitur consequat ac at tortor. Vivamus non odio in lacus vehicula sagittis non eu nisl. Etiam non leo at purus gravida fermentum. Suspendisse eu tristique purus. Aenean quis dictum nunc. Integer aliquet nisi vitae rutrum maximus. Pellentesque nec ipsum hendrerit, euismod lorem nec, iaculis lectus. Sed gravida porta leo.</p>
-
-							<h4>A heading</h4>
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus odio in eleifend. Donec ornare placerat porta. Duis nec leo ut nisi efficitur consequat ac at tortor. Vivamus non odio in lacus vehicula sagittis non eu nisl. Etiam non leo at purus gravida fermentum. Suspendisse eu tristique purus. Aenean quis dictum nunc. Integer aliquet nisi vitae rutrum maximus. Pellentesque nec ipsum hendrerit, euismod lorem nec, iaculis lectus. Sed gravida porta leo.</p>
-							</div>
+		<div id="myCarousel" class="carousel slide">
+			<ol class="carousel-indicators">
+				<li data-target = "#myCarousel" data-slide-to = "0" class="active"></li>
+				<li data-target = "#myCarousel" data-slide-to = "1"></li>
+				<li data-target = "#myCarousel" data-slide-to = "2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="image/image1.jpg" alt="Image1" class="img-responsive" width="100%">
+					<div class="carousel-caption">
+						<h3>Image1</h3>
+						<P>klasfkasfasf</P>
 					</div>
 				</div>
-
-				<div class="col-lg-3">
-
-					<div class="list-group">
-						<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading">Lorem ipsum</h4>
-						<p class="list-group-item-heading">dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus odio in eleifend. Donec ornare placerat porta.</p>
-						</a>
-						<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading">Lorem ipsum</h4>
-						<p class="list-group-item-heading">dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus odio in eleifend. Donec ornare placerat porta.</p>
-						</a>
-						<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading">Lorem ipsum</h4>
-						<p class="list-group-item-heading">dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus odio in eleifend. Donec ornare placerat porta.</p>
-						</a>
-						<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading">Lorem ipsum</h4>
-						<p class="list-group-item-heading">dolor sit amet, consectetur adipiscing elit. Aenean imperdiet faucibus odio in eleifend. Donec ornare placerat porta.</p>
-						</a>
+				<div class="item">
+					<img src="image/image2.jpg" alt="Image2" class="img-responsive" width="100%">
+					<div class="carousel-caption">
+						<h3>Image2</h3>
+						<P>klasfkasfasf</P>
 					</div>
-					
 				</div>
-
+				<div class="item">
+					<img src="image/image3.jpg" alt="Image3" class="img-responsive" width="100%">
+					<div class="carousel-caption">
+						<h3>Image3</h3>
+						<P>klasfkasfasf</P>
+					</div>
+				</div>
 			</div>
+
+			<a href="#myCarousel" class="carousel-control left" data-slide="prev">
+				<span class="icon-prev"></span>
+			</a>
+
+			<a href="#myCarousel" class="carousel-control right" data-slide="next">
+				<span class="icon-next"></span>
+			</a>
+
 		</div>
 
 		<!-- Footer -->
@@ -91,7 +87,7 @@
 				<a href="#" class="navbar-btn btn-danger btn pull-right"> Subcribe on Youtube </a>
 			</div>
 		</div>
-
+		
 		<div class="modal fade" id="contact" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -127,6 +123,7 @@
 				</div>
 			</div>
 		</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="js/bootstrap.js"></script>
 	</body>
